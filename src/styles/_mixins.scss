@@ -1,0 +1,10 @@
+@mixin center-element {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+}
+
+//media query
+@mixin lower-than-desktop {
+  @media (max-width: 1024px) { @content; }
+}
