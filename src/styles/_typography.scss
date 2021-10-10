@@ -14,9 +14,10 @@ h1,
 h2,
 h3 {
   margin: 0;
+  font-weight: $base-font-weight;
 }
 
 h1 {
   font-size: $heading1-size;
-  font-family: $heading1-line-height;
+  line-height: $heading1-line-height;
 }

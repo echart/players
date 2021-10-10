@@ -1,6 +1,6 @@
 import { Switch, Route } from 'react-router-dom';
 import Players from '../pages/Home';
-import EditPlayer from '../pages/EditPlayer';
+import Edit from '../pages/Edit';
 
 export const routes = [
   {
@@ -10,7 +10,7 @@ export const routes = [
   },
   {
     path: '/edit/:id',
-    component: EditPlayer,
+    component: Edit,
     exact: true,
   },
 ];

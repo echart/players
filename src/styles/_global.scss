@@ -1,14 +1,18 @@
-@import-normalize;
 @import 'variables';
 @import 'mixins';
 
-body {
-  background-color: $page-bg;
+* {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
 }
 
-main {
+body {
+  background-color: $page-bg;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.App {
   @include center-element;
+  flex-direction: column;
 }
