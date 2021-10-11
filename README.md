@@ -10,6 +10,7 @@
       <ul>
         <li><a href="#tecnologias">Tecnologias:</a></li>
         <li><a href="#tecnologias">Status:</a></li>
+        <li><a href="#estrutura">Estrutura:</a></li>
       </ul>
     </li>
     <li>
@@ -60,6 +61,36 @@ O projeto foi finalizado seguindo as especificações enviadas, e as seguintes f
 
 <p align="right">(<a href="#gerenciador-de-jogadores">Voltar ao topo</a>)</p>
 
+### Estrutura
+
+A estrutura inicial do projeto foi criada a partir do create-react-app, limpando apenas o que não seria utilizado. A estrutura segue a organização a seguir:
+
+- src/components
+
+  Onde estão todos os componentes utilizados pela aplicação. Exemplo: Players, Button, Input, Header
+
+- src/config
+
+  Arquivos de configuração do client do graphql e de endpoint
+
+- src/hooks
+
+  Hooks criados para consumir e tratar lógicas referentes a consumo e manipulação de dados, e/ou facilitar o reaproveitamento.
+
+- src/pages
+
+  Arquivos de páginas da aplicação
+
+- src/routes
+
+  Arquivos relacionados as configurações de rotas
+
+- src/styles
+
+  Arquivos comuns de estilos da aplicação. Exemplo: Variáveis, Tipografia, etc. Arquivos relacionados a estilização de cada componente ficam presentes no respectivo diretorio do componente.
+
+
+<p align="right">(<a href="#gerenciador-de-jogadores">Voltar ao topo</a>)</p>
 
 ## Começando
 
@@ -91,6 +122,10 @@ Alguns testes unitários foram realizados durante o desenvolvimento para garanti
 <p align="right">(<a href="#gerenciador-de-jogadores">Voltar ao topo</a>)</p>
 
 ## Demonstração
-Foi utilizado da Netlify para subir uma versão de demonstração do teste: [Geranciador de jogadores](https://stoic-fermat-c73065.netlify.app/)
+Para disponibilização de uma URL de teste, foi utilizado do serviço da [Netlify](http://netlify.com/), onde foi configurada uma pipeline de deploy continuo da branch Main.
+
+### URL de Demonstração
+ [https://stoic-fermat-c73065.netlify.app/](https://stoic-fermat-c73065.netlify.app/)
+
 
 <p align="right">(<a href="#gerenciador-de-jogadores">Voltar ao topo</a>)</p>
