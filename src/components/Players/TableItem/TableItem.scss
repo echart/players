@@ -1,0 +1,24 @@
+@import '../../../styles/variables';
+@import '../../../styles/mixins';
+
+$shirt-size: 25px;
+
+.row {
+  color: $green;
+
+  .shirt {
+    @include center-element;
+    background-color: $yellow;
+
+    height: $shirt-size;
+    width: $shirt-size;
+    border-radius: 100%;
+
+    font-size: $base-small-font-size;
+    line-height: 1;
+  }
+
+  .action {
+    text-align: right;
+  }
+}

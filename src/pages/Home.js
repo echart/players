@@ -1,5 +1,16 @@
-function Players() {
-  return <h1>Jogadores</h1>
-};
+import { Fragment } from 'react';
+import Header from '../components/Header/Header';
+import Container from '../components/Container/Container';
+import Players from '../components/Players/Players';
 
-export default Players;
+function Home() {
+  return (
+    <Fragment>
+      <Header title="Jogadores" />
+      <Container>
+        <Players />
+      </Container>
+    </Fragment>
+  );
+}
+export default Home;
