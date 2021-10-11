@@ -1,15 +1,17 @@
 import { Fragment } from 'react';
 import Header from '../components/Header/Header';
 import Container from '../components/Container/Container';
+import Edit from '../components/Edit/Edit';
 
-function Edit() {
-  const TITLE = `Edição de Jogador`;
+function Page() {
   return (
     <Fragment>
-      <Header title={TITLE} />
-      <Container>aaaaa</Container>
+      <Header title="Edição de Jogador" />
+      <Container>
+        <Edit />
+      </Container>
     </Fragment>
   );
 }
 
-export default Edit;
+export default Page;
