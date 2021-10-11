@@ -1,0 +1,32 @@
+@import 'variables';
+@import 'mixins';
+
+//importing Roboto from Googlefonts
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+  font-weight: $base-font-weight;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  font-weight: $base-font-weight;
+}
+
+h1 {
+  font-size: $heading1-size;
+  line-height: $heading1-line-height;
+
+  @include lower-than-desktop {
+    font-size: 38px;
+  }
+}
+
+h3 {
+  font-size: 20px;
+}

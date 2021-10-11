@@ -1,0 +1,17 @@
+@mixin center-element {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin clean-btn {
+  background: transparent;
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+//media query
+@mixin lower-than-desktop {
+  @media (max-width: 1023px) { @content; }
+}

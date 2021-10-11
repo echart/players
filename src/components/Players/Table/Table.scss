@@ -1,0 +1,32 @@
+@import '../../../styles/variables';
+@import '../../../styles/mixins';
+
+.table-players {
+  margin-top: 12px;
+
+  thead th{
+    .btn-order {
+      color: $gray;
+      cursor: pointer;
+      font-size: inherit;
+      font-weight: inherit;
+      @include clean-btn;
+      @include center-element;
+
+      span {
+        display: inline-flex;
+        margin-left: 5px;
+      }
+
+      @include lower-than-desktop {
+        svg {
+          width: 14px;
+        }
+      }
+    }
+  }
+
+  .action {
+    text-align: right;
+  }
+}

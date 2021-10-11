@@ -1,0 +1,19 @@
+@import '../../styles/variables';
+
+.btn {
+  padding: 10px;
+  font-weight: $font-weight-bold;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+
+  &--primary {
+    background-color: $yellow;
+    color: $green;
+  }
+
+  &--secondary {
+    background-color: $green;
+    color: $yellow;
+  }
+}

@@ -1,7 +1,10 @@
+import Routes from './routes/routes';
+import './styles/styles.scss';
+
 function App() {
   return (
     <div className="App">
-      hello world
+      <Routes />
     </div>
   );
 }

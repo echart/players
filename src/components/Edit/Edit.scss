@@ -1,0 +1,23 @@
+@import '../../styles/variables';
+
+.player-edit {
+  h3 {
+    color: $gray;
+    font-weight: $font-weight-bold;
+    margin-bottom: 19px;
+  }
+
+  .form-label:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 30px;
+
+  .btn{
+    margin-left: 20px;
+  }
+}

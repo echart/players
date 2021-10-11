@@ -1,70 +1,96 @@
-# Getting Started with Create React App
+# Gerenciador de jogadores
+[![Netlify Status](https://api.netlify.com/api/v1/badges/34bea57d-df32-484b-a9c2-92009eada5c6/deploy-status)](https://app.netlify.com/sites/stoic-fermat-c73065/deploys)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+<details>
+  <summary>Tabela de Conteúdo</summary>
+  <ol>
+    <li>
+      <a href="#sobre-o-projeto">Sobre o projeto</a>
+      <ul>
+        <li><a href="#tecnologias">Tecnologias:</a></li>
+        <li><a href="#tecnologias">Status:</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#como-usart">Como Usar</a>
+      <ul>
+        <li><a href="#instalação">Instalação:</a></li>
+        <li><a href="#configuração">Configuração:</a></li>
+        <li><a href="#iniciando">Iniciando:</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#demonstração">Demonstração:</a>
+    </li>
+  </ol>
+</details>
 
-In the project directory, you can run:
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+<!-- ABOUT THE PROJECT -->
+## Sobre o projeto
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Esse projeto é um teste de frontend realizado para processo seletivo com o intuito de avaliar os conhecimentos técnicos.
 
-### `npm test`
+<p align="right">(<a href="#gerenciador-de-jogadores">Voltar ao topo</a>)</p>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Tecnologias
 
-### `npm run build`
+Este projeto foi criado com create-react-app.  Abaixo todas as tecnologias/ferramentas usadas para construir esse projeto:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+* [React.js](https://reactjs.org/)
+* [Sass](https://github.com/sass/node-sass)
+* [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/)
+* [graphql-request](https://github.com/prisma-labs/graphql-request)
+* [react-router-dom](https://reactrouter.com/web/guides/quick-start)
+* [prop-types](https://reactjs.org/docs/typechecking-with-proptypes.html)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<p align="right">(<a href="#gerenciador-de-jogadores">Voltar ao topo</a>)</p>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Status
 
-### `npm run eject`
+O projeto foi finalizado seguindo as especificações enviadas, e as seguintes features foram implementadas:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- [x] Pegar jogadores da API Graphql
+- [x] Listar jogadores
+- [x] Filtrar jogadores por nome, gols ou jogos de forma ascendente ou descendente
+- [x] Buscar jogador por nome
+- [x] Editar jogador
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<p align="right">(<a href="#gerenciador-de-jogadores">Voltar ao topo</a>)</p>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Começando
 
-## Learn More
+### Instalação
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Instale usando o npm:
+  ```sh
+  npm install
+  ```
+### Configuração
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+1. Acesso o arquivo .env
+2. Adicione o endpoint da sua API Graphql como no exemplo abaixo
+   ```sh
+   REACT_APP_ENDPOINT_URL=http://youapi.com/graphql
 
-### Code Splitting
+### Iniciando
+Para iniciar o projeto:
+  ```sh
+  npm start
+  ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Testes
+Alguns testes unitários foram realizados durante o desenvolvimento para garantir funcionando de alguns componentes. Para rodar:
+  ```sh
+  npm run tests
+  ```
 
-### Analyzing the Bundle Size
+<p align="right">(<a href="#gerenciador-de-jogadores">Voltar ao topo</a>)</p>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Demonstração
+Foi utilizado da Netlify para subir uma versão de demonstração do teste: [Geranciador de jogadores](https://stoic-fermat-c73065.netlify.app/)
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<p align="right">(<a href="#gerenciador-de-jogadores">Voltar ao topo</a>)</p>
