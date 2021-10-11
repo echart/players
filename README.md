@@ -1,4 +1,7 @@
 # Gerenciador de jogadores
+[![Netlify Status](https://api.netlify.com/api/v1/badges/34bea57d-df32-484b-a9c2-92009eada5c6/deploy-status)](https://app.netlify.com/sites/stoic-fermat-c73065/deploys)
+
+
 <details>
   <summary>Tabela de Conteúdo</summary>
   <ol>
@@ -84,5 +87,10 @@ Alguns testes unitários foram realizados durante o desenvolvimento para garanti
   ```sh
   npm run tests
   ```
+
+<p align="right">(<a href="#gerenciador-de-jogadores">Voltar ao topo</a>)</p>
+
+## Demonstração
+Foi utilizado da Netlify para subir uma versão de demonstração do teste: [Geranciador de jogadores](https://stoic-fermat-c73065.netlify.app/)
 
 <p align="right">(<a href="#gerenciador-de-jogadores">Voltar ao topo</a>)</p>
