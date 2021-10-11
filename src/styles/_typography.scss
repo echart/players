@@ -1,4 +1,5 @@
 @import 'variables';
+@import 'mixins';
 
 //importing Roboto from Googlefonts
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
@@ -20,4 +21,12 @@ h3 {
 h1 {
   font-size: $heading1-size;
   line-height: $heading1-line-height;
+
+  @include lower-than-desktop {
+    font-size: 38px;
+  }
+}
+
+h3 {
+  font-size: 20px;
 }

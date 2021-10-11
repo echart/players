@@ -15,4 +15,42 @@ body {
 .App {
   @include center-element;
   flex-direction: column;
+  padding: 30px 0;
+
+  @include lower-than-desktop {
+    padding: 24px 16px;
+  }
+}
+
+.table {
+  border-collapse: collapse;
+  text-align: left;
+  width: 100%;
+
+  thead th {
+    color: $gray;
+    font-size: $base-large-font-size;
+    font-weight: $font-weight-bold;
+
+    @include lower-than-desktop {
+      font-size: $base-mobile-font-size;
+    }
+  }
+
+  tr {
+    border-bottom: 1px solid $primary;
+  }
+}
+
+a {
+  color: $green;
+  font-size: $base-small-font-size;
+  line-height: 1;
+  text-decoration: none;
+}
+
+a, button {
+  &:hover {
+    opacity: 0.6;
+  }
 }

@@ -7,6 +7,7 @@ function Input({
   defaultValue,
   value,
   onChange = () => null,
+  onBlur = () => null,
   type = 'text',
   placeholder,
   isRequired = false,
@@ -21,6 +22,7 @@ function Input({
       value={value}
       data-testid="input"
       onChange={onChange}
+      onBlur={onBlur}
       type={type}
       required={isRequired}
     />
@@ -34,6 +36,7 @@ Input.propTypes = {
   defaultValue: propTypes.oneOfType([propTypes.string, propTypes.number]),
   value: propTypes.oneOfType([propTypes.string, propTypes.number]),
   onChange: propTypes.func.isRequired,
+  onBlur: propTypes.func,
   type: propTypes.string,
   isRequired: propTypes.bool,
 };

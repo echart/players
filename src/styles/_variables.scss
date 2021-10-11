@@ -17,13 +17,18 @@ $cta-secondary-color: $yellow;
 
 
 //weights
-$font-height-bold: bold;
+$font-weight-bold: bold;
 $base-font-weight: 400;
 
 //base family and size
 $base-font-family: 'Roboto', sans-serif;
 $base-font-size: 18px;
 $base-line-height: 40px;
+
+$base-small-font-size: 16px;
+$base-large-font-size: 20px;
+
+$base-mobile-font-size: 14px;
 
 //sizes
 $heading1-size: 48px;
